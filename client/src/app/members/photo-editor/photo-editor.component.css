@@ -1,0 +1,21 @@
+.img-thumbnail {
+  background-color: white;
+}
+
+img.img-thumbnail {
+  min-height: 100px;
+  min-width: 100px;
+  margin-bottom: 2px;
+}
+
+.nv-file-over {
+  border: dotted 3px #0099ff;
+}
+
+input[type="file"] {
+  color: transparent;
+}
+
+.progress-bar {
+  background-color: #0099ff;
+}
