@@ -37,7 +37,11 @@
       <a class="dropdown-toggle text-light" dropdownToggle
         >Welcome {{ user.userName | titlecase }}</a
       >
-      <img src="{{ user.photoUrl }}" alt="{{ user.userName }}" class="ml-3" />
+      <img
+        src="{{ user.photoUrl || './assets/user.png' }}"
+        alt="{{ user.userName }}"
+        class="ml-3"
+      />
       <div class="dropdown-menu mt-3" *dropdownMenu>
         <a href="" class="dropdown-item" routerLink="/member/edit"
           >Edit Profile</a
